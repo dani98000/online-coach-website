@@ -17,24 +17,15 @@ hbs.registerPartials(partialsPath);
 app.use(express.static(publicDirectoryPath));
 
 app.get("", (req, res) => {
-  res.render("index", {
-    title: "Weather App",
-    name: "Daniel Maizel",
-  });
+  res.render("index");
 });
 
 app.get("/join", (req, res) => {
-  res.render("join", {
-    title: "Weather App",
-    name: "Daniel Maizel",
-  });
+  res.render("join");
 });
 
 app.get("/price", (req, res) => {
-  res.render("price", {
-    title: "Weather App",
-    name: "Daniel Maizel",
-  });
+  res.render("price");
 });
 
 app.listen(3000, () => {
